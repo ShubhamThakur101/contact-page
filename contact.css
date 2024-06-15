@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(97, 199, 240), rgb(198, 198, 231));
+}
+
+.form-container {
+  width: 350px;
+  background-color: rgba(22, 22, 22, 0.096);
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+input,
+textarea,
+button {
+  padding: 9px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea{
+  resize: vertical;
+}
+
+
+button{
+  cursor: pointer;
+  font-weight: 500;
+  background-color: rgb(127,255,195);
+}
+
+button:hover{
+  background-color: rgb(69,240,183);
+}
+
+button:active{
+  background-color: rgb(149,241,210);
+}
+
+i{
+  color: rgb(59, 59, 59);
+  margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+  .form-container {
+    width: 320px;
+    background-color: rgba(22, 22, 22, 0.096);
+    padding: 20px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+}
